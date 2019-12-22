@@ -96,6 +96,18 @@ Las carpetas donde se encuentra los archivos para el funcionamiento de bootstrap
 
 Es uno de los PaaS más utilizados en la actualidad en entornos empresariales por su fuerte enfoque en resolver el despliegue de una aplicación. Ademas te permite manejar los servidores y sus configuraciones, escalamiento y la administración. 
 
+Una aplicacion en heroku debe saber como iniciar su funcionamiento para ello se realiza la configuracion en el archivo ***package.json***
+
+~~~
+"scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+
+~~~
+
+#### start es el atributo donde se indicra como el programa arranca su funcionamiento
+
 Para subir un proyecto a Heroku, se deben realizar los siguientes pasos
 
 1. Tener cuenta en heroku
@@ -119,5 +131,5 @@ heroku open
 ~~~
 
 
-[sistema en heroku](https://svizcaino-servicios-webserve.herokuapp.com)
+[sistema en heroku](https://svizcaino-webserber.herokuapp.com)
 
